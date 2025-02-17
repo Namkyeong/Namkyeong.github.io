@@ -26,7 +26,7 @@ nav: true
   <p class="bibtitle">{{section.text}}</p>
 
   {%- for y in section.years %}
-    <h2 class="year">{{y}}</h2>
+    <!-- <h2 class="year">{{y}}</h2> -->
     {%- bibliography -f papers -q {{section.bibquery}}[year={{y}}] -%}
   {% endfor %}
 
