@@ -30,3 +30,5 @@ My research topics of interest include, but are not limited to, the following:
 - Graph Neural Networks (GNNs) for scientific discovery
 - Large Language Models (LLMs) for scientific discovery
 - LLM Agent Systems for scientific discovery
+
+📌 **I'm currently on the 2026 job market, looking for a research scientist and postdoctoral position in several countries. If you'd like to connect, please feel free to reach out!**
