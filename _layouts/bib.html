@@ -109,6 +109,26 @@
 
         </div>
 
+        {%- if entry.author_note -%}
+          {% if entry.author_note contains "UIUC" %}
+            <div class="author-note" style="color: rgb(255, 94, 0); font-style: italic; font-weight: bold;">
+              {{ entry.author_note | strip }}
+            </div>
+          {% elsif entry.author_note contains "Genentech" %}
+            <div class="author-note" style="color: #3971fe; font-style: italic; font-weight: bold;">
+              {{ entry.author_note | strip }}
+            </div>
+          {% elsif entry.author_note contains "NAVER" %}
+            <div class="author-note" style="color: #24d436; font-style: italic; font-weight: bold;">
+              {{ entry.author_note | strip }}
+            </div>
+          {% else %}
+            <div class="author-note" style="color: #000001; font-style: italic; font-weight: bold;">
+              {{ entry.author_note | strip }}
+            </div>
+          {% endif %}
+        {%- endif -%}
+
         <!-- Journal/Book title and date -->
         {% assign proceedings = "inproceedings,incollection" | split: ','%}
         {% assign thesis = "thesis,mastersthesis,phdthesis" | split: ','%}
@@ -120,8 +140,6 @@
           {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
         {%- elsif entry.type == "preprints" -%}
           {%- capture entrytype -%}<em>Under Review</em> {%- endcapture -%}
-        {%- elsif proceedings contains entry.type -%}
-          {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
         {%- elsif thesis contains entry.type -%}
           {%- capture entrytype -%}<em>{{entry.school}}</em> {%- endcapture -%}
         {%- else -%}
