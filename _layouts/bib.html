@@ -122,6 +122,10 @@
             <div class="author-note" style="color: #24d436; font-style: italic; font-weight: bold;">
               {{ entry.author_note | strip }}
             </div>
+          {% elsif entry.author_note contains "KRICT" %}
+            <div class="author-note" style="color: #7c7c7c; font-style: italic; font-weight: bold;">
+              {{ entry.author_note | strip }}
+            </div>
           {% else %}
             <div class="author-note" style="color: #000001; font-style: italic; font-weight: bold;">
               {{ entry.author_note | strip }}
