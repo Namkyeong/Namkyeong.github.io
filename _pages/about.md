@@ -31,4 +31,4 @@ My research topics of interest include, but are not limited to, the following:
 - Large Language Models (LLMs) for scientific discovery
 - LLM Agent Systems for scientific discovery
 
-📌 **I'll be on the job market now, looking for a research scientist or postdoctoral position in several countries. If you'd like to connect, please feel free to reach out!**
+📌 **I'm on the job market now, looking for a research scientist or postdoctoral position in several countries. If you'd like to connect, please feel free to reach out!**
