@@ -1,18 +1,18 @@
 ---
 layout: page
-permalink: /publications/
-title: Publications
-description: All the publications that I have done or collaborated with. (†:Equal contribution)
+permalink: /preprints/
+title: Preprints
+description: All the preprints that I have done or collaborated with. (†:Equal contribution)
 sections:
-   - bibquery: "@inproceedings"
-     text: "Published Papers"
-     years: [2025, 2024, 2023, 2022]
+   - bibquery: "@preprints"
+     text: "Preprints"
+     years: [2025]
    
 
 nav: true
 ---
 
-<!-- _pages/publications.md -->
+<!-- _pages/random.md -->
  
  <div class="publications">
  
